@@ -133,12 +133,9 @@ The pipeline uses the **Elastic Stack (Elasticsearch, Logstash, Kibana, Beats)**
 
 ## 5. Screenshots
 
-> *(Add screenshots here to illustrate dashboards, MISP integrations, or hunting visualizations.)*
-> Example placeholders:
-
-* `docs/screenshots/misp_integration.png`
-* `docs/screenshots/kibana_dashboard.png`
-* `docs/screenshots/attack_simulation.png`
+* ![> Ubuntu Server](Images/Ubuntu Server.png)
+* ![> Kibana Home](Images/Kibana Home.png)
+* ![> Elastic Logs](Images/Elastic Logs.png)
 
 ---
 
