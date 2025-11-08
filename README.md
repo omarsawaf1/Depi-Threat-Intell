@@ -146,7 +146,7 @@ The pipeline uses the **Elastic Stack (Elasticsearch, Logstash, Kibana, Beats)**
 
 * [MITRE ATT&CK Group G0096 – APT41](https://attack.mitre.org/groups/G0096/)
 * [ATT&CK® Navigator](https://mitre-attack.github.io/attack-navigator/#layerURL=https%3A%2F%2Fattack.mitre.org%2Fgroups%2FG0096%2FG0096-enterprise-layer.json)
-* [FortiGuard Threat Actor Encyclopedia]([https://www.fortiguard.com/threat-signal-reports](https://www.fortiguard.com/threat-actor/5566/apt41))
+* [FortiGuard Threat Actor Encyclopedia](https://www.fortiguard.com/threat-actor/5566/apt41)
 * [Apt41: Arisen from Dust](https://cloud.google.com/blog/topics/threat-intelligence/apt41-arisen-from-dust)
 * [STIX v2.1 Specification](https://docs.oasis-open.org/cti/stix/v2.1/os/stix-v2.1-os.html#_1j0vun2r7rgb)
 * [CISA STIX Best Practices](https://www.cisa.gov/sites/default/files/2022-12/stix-bp-v1.0.0.pdf)
