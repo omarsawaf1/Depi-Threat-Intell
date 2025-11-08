@@ -133,9 +133,9 @@ The pipeline uses the **Elastic Stack (Elasticsearch, Logstash, Kibana, Beats)**
 
 ## 5. Screenshots
 
-* ![> Ubuntu Server](Images/Ubuntu Server.png)
-* ![> Kibana Home](Images/Kibana Home.png)
-* ![> Elastic Logs](Images/Elastic Logs.png)
+* ![> Ubuntu Server](Images/Ubuntu_Server.webp)
+* ![> Kibana Home](Images/Kibana_Home.webp)
+* ![> Elastic Logs](Images/Elastic_Logs.webp)
 
 ---
 
