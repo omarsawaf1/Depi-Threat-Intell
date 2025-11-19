@@ -1,0 +1,26 @@
+# ======================== Elasticsearch Configuration =========================
+path.data: /var/lib/elasticsearch
+path.logs: /var/log/elasticsearch
+
+# Network Settings
+network.host: 0.0.0.0
+http.port: 9200
+
+# Discovery
+cluster.initial_master_nodes: ["lap"]
+
+# Security (Auto-configured)
+xpack.security.enabled: true
+xpack.security.enrollment.enabled: true
+
+xpack.security.http.ssl:
+  enabled: true
+  keystore.path: certs/http.p12
+
+xpack.security.transport.ssl:
+  enabled: true
+  verification_mode: certificate
+  keystore.path: certs/transport.p12
+  truststore.path: certs/transport.p12
+
+http.host: 0.0.0.0
