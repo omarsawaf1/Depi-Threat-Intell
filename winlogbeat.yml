@@ -1,0 +1,35 @@
+# ======================== Winlogbeat Event Logs =========================
+winlogbeat.event_logs:
+  - name: Application
+    ignore_older: 72h
+  - name: System
+    ignore_older: 72h
+  - name: Security
+    ignore_older: 72h
+
+  # Enable this if Sysmon is installed for process tracking
+  #- name: Microsoft-Windows-Sysmon/Operational
+
+  # Critical for detecting PowerShell attacks
+  - name: Windows PowerShell
+    event_id: 400, 403, 600, 800
+  - name: Microsoft-Windows-PowerShell/Operational
+    event_id: 4103, 4104, 4105, 4106
+
+# =================================== Kibana ===================================
+setup.kibana:
+  host: "192.168.1.5:5601"
+
+# ================================== Outputs ===================================
+
+# ---------------------------- Elasticsearch Output ----------------------------
+# (Keep this commented out during normal operation)
+#output.elasticsearch:
+#  hosts: ["https://192.168.1.5:9200"]
+#  username: "elastic"
+#  password: "<YOUR_ELASTIC_PASSWORD>"
+#  ssl.verification_mode: none
+
+# ------------------------------ Logstash Output -------------------------------
+output.logstash:
+  hosts: ["192.168.1.5:5044"]
