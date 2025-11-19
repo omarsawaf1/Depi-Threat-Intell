@@ -1,0 +1,27 @@
+# ============================== Filebeat ===============================
+# Critical fix for "module directory not found" errors
+path.home: /usr/share/filebeat
+
+# Load module configurations (like system.yml)
+filebeat.config.modules:
+  path: /etc/filebeat/modules.d/*.yml
+  reload.enabled: false
+
+# =================================== Kibana ===================================
+setup.kibana:
+  host: "192.168.1.5:5601"
+
+# ================================== Outputs ===================================
+
+# ---------------------------- Elasticsearch Output ----------------------------
+# (Keep this commented out during normal operation)
+#output.elasticsearch:
+#  hosts: ["https://192.168.1.5:9200"] 
+#  username: "elastic"
+#  password: "<YOUR_ELASTIC_PASSWORD>"
+#  ssl.verification_mode: none
+
+# ------------------------------ Logstash Output -------------------------------
+# Sending to the Logstash Server
+output.logstash:
+  hosts: ["192.168.1.5:5044"]
