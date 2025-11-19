@@ -1,0 +1,6 @@
+server.port: 5601
+server.host: "0.0.0.0" # Allows external access to the dashboard
+
+# Connect to Elasticsearch
+elasticsearch.hosts: ["https://localhost:9200"]
+elasticsearch.ssl.verificationMode: none # Trusts the self-signed cert
